@@ -1,4 +1,11 @@
+// This is a single-line comment
+
+/*
 console.log("Hello World!!!")
+
+console.log(20, "Hello World!!!", true);
+
+*/
 
 const x = 100;
 
