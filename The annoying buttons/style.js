@@ -1,8 +1,11 @@
-
 let button = document.getElementById("myBtn");
+
 let message = document.getElementById("message1");
+
 let message2 = document.getElementById("message2");
+
 let message3 = document.getElementById("message3");
+
 let message4 = document.getElementById("message4");
 
 
@@ -19,21 +22,25 @@ button.addEventListener("click", function() {
     }
     else if (clickCount === 2) {
         button.style.background = "yellow";
-        document.getElementById("message2").innerHTML = "okay You clicked the button again cool, I guess";
+        document.getElementById("message2").innerHTML = "okay You clicked the button again cool, I guess"
+        fontFamily = "Arial";
     }
     else if (clickCount === 3) {
         button.style.background = "blue";
-        document.getElementById("message3").innerHTML = "okay you started to annoy me now";
+        document.getElementById("message3").innerHTML = "okay you started to annoy me now"
+        fontFamily = "courier";
     }
     else if (clickCount === 4) { 
         button.style.background = "red";
-        document.getElementById("message4").innerHTML = "okay you are really annoying me now, stop it";
+        document.getElementById("message4").innerHTML = "okay you are really annoying me now, stop it"
+        fontFamily = "Comic Sans MS";
         button.style.color = "white";
     }
 
     else if (clickCount === 5) {
         button.style.background = "white";
-        document.getElementById("message5").innerHTML = "I'm done with you, stop clicking the button";
+        document.getElementById("message5").innerHTML = "I'm done with you, stop clicking the button"
+        fontFamily = "arial";
         button.style.color = "black";
     }
 
@@ -43,14 +50,3 @@ button.addEventListener("click", function() {
 
     console.log("Click count: " + clickCount);
 });
-
-
-// Naming Conventions
-// - Only letters, numbers, underscores and dollar signs
-// - Can't start with a number
-
-// Multi-Word Formatting
-// firstName     camelCase
-// first_name    underscore
-// FirstName     PascalCase
-// firstname     owercase
